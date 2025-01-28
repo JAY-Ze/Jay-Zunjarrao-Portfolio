@@ -1,0 +1,139 @@
+body{
+    background-color: #010f1a;
+    color: antiquewhite;
+    font-family: "Oxanium", serif;
+}
+.left{
+    font-size: 1.5rem;
+    display: flex;
+}
+.PageHead{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: center;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #001d33;
+    border-radius: 15px;
+}
+.aniLogo {
+    width: 50px;
+    height: 50px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+nav ul li {
+    margin: 0 20px;
+    transition: 0.5s;
+}
+nav ul li:hover{
+    transform: scale(1.1);
+}
+hr {
+    background-color: rgb(255, 252, 83);
+}
+.firstSec{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.leftSec {
+    /* background-color: orange; */
+    width: 30%;
+}
+.rightSec {
+    width: 30%;
+}
+.homeImg{
+    width: 100%;
+    height: auto;
+    transition: transform 1s ease;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+}
+.homeImg:hover {
+    transform: scale(1.1);
+    transform-style:preserve-3d;
+}
+button {
+    padding: 5px 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.4s ease;
+  }
+
+  button:hover {
+    /* background: #0056b3; */
+    filter: drop-shadow(0 0 0.75rem rgb(69, 171, 255));
+  }
+
+.titles{
+    text-align: center;
+}
+.QuoteSec{
+    text-align: center;
+}
+.quote{
+    font-style: italic;
+}
+.author{
+    font-style: italic;
+}
+.secondSec{
+    border: 2px solid beige;
+    margin: 5%;
+    border-radius:5%;
+}
+.active-page{
+    color: rgb(255, 153, 98);
+    border-bottom: 5px solid;
+    border-color: rgb(255, 153, 98);
+}
+.hr{
+    margin: 20px;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 20px 80px;
+}
+.socialMedia ul{ 
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.socialMedia ul li{
+    list-style:none;
+}
+.fab{
+    width: 25px;
+    margin: 0px 10px;
+    transition-duration: 0.5s;
+}
+.fab:hover{
+    transform: scale(1.1);
+}
+.XFab:hover{
+    filter: drop-shadow(0 0 0.4rem rgb(255, 255, 255));
+}
+.igFab:hover{
+    filter: drop-shadow(0 0 0.4rem rgb(255, 0, 0));
+}
+.ghFab:hover{
+    filter: drop-shadow(0 0 0.4rem rgb(255, 255, 255));
+}
+.LIFab:hover{
+    filter: drop-shadow(0 0 0.4rem rgb(2, 135, 252));
+}
