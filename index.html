@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jay Zunjarrao</title>
+    <link rel="icon" type="favicon.png" href="favicon.png" />
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oxanium&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Oxanium&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -36,12 +35,20 @@
     <main>
         <section class="firstSec">
             <div class="leftSec">
-                <h1 class="">I'm Jay<br>Zunjarrao</h1>
+                <h1 class="greets">Hello, My Name is</h1>
+                <h1 class="name">Jay Zunjarrao</h1>
+                <div class="typing-container">
+                    <span class="dynamic-text"></span>
+                  </div>
+                  
                 <p>a final-year ENTC student passionate about software development, AI, and innovative tech solutions. With hands-on experience in IoT, machine learning, and creative design, I thrive on building impactful projects and solving real-world problems.<br><br>Let’s create something extraordinary!</p>
                 <button id="scrollButton">Learn More</button>
             </div>
             <div class="rightSec">
-                <img class="homeImg" src="res/images/homepageImg.webp" alt="Profile Pic">
+                <picture>
+                    <source srcset="res/images/homepageImg.webp" type="image/webp">
+                    <img class="homeImg" src="res/images/homepageImg.jpg" alt="Profile Pic">
+                </picture>
             </div>
         </section>
         <section class="QuoteSec">
@@ -55,35 +62,94 @@
             <h2 class="titles">Skills</h2>
             <div class="skillsContainer">
                 <div class="skill">
-                    <img src="res/images/htmlIcon.png" alt="HTML Icon">
-                    <h3>HTML5</h3>
-                    <p>I'm proficient in building basic HTML structures and using semantic HTML5 elements.</p>
+                    <img class="skill-icon" src="res/images/html-5.png" alt="HTML Icon">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                      </div>
+                      <span class="percentage">90%</span>
                 </div>
                 <div class="skill">
-                    <img src="res/images/cssIcon.png" alt="CSS Icon">
-                    <h3>CSS3</h3>
-                    <p>I've experience with CSS Grid, Flexbox, and advanced animations.</p>
+                    <img class="skill-icon" src="res/images/css3.png" alt="CSS Icon">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                      </div>
+                      <span class="percentage">75%</span>
                 </div>
                 <div class="skill">
-                    <img src="res/images/jsIcon.png" alt="JavaScript Icon">
-                    <h3>JavaScript</h3>
-                    <p>I'm proficient in building interactive and dynamic web applications.</p>
+                    <img class="skill-icon" src="res/images/javascript.png" alt="JavaScript Icon">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                      </div>
+                      <span class="percentage">90%</span>
                 </div>
                 <div class="skill">
-                    <img src="res/images/reactIcon.png" alt="React Icon">
-                    <h3>React</h3>
-                    <p>I've experience with creating reusable and efficient React components.</p>
+                    <img class="skill-icon" src="res/images/javascript.png" alt="React Icon">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%"></div>
+                      </div>
+                      <span class="percentage">50%</span>
                 </div>
                 <div class="skill">
-                    <img src="res/images/javaIcon.png" alt="Java Icon">
-                    <h3>Java</h3>
-                    <p>I'm proficient in Java programming. </p>
+                    <img class="skill-icon" src="res/images/java.png" alt="Java Icon">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%"></div>
+                      </div>
+                      <span class="percentage">40%</span>
                 </div>
-
+                <div class="skill">
+                    <img class="skill-icon" src="res/images/python.png" alt="Python Icon">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                      </div>
+                      <span class="percentage">80%</span>
+                </div>
             </div>
         </section>
+        <section class="projectSec">
+            <div class="section-title-animation">Projects</div>
+            <h2 class="titles">Projects</h2>
+            <div class="projectContainer">
+                <!--Project 1-->
+                <div class="project">
+                    <img class="project-img" src="res/images/project1.jpg" alt="Project 1">
+                    <div class="project-details">
+                        <h3>theMavericks</h3>
+                        <p>Built a website for Car Enthusiasths where they can browse their favorite cars.</p>
+                        <a href="https://github.com/your-repo" target="_blank" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+        
+                <!--Project 2-->
+                <div class="project">
+                    <img class="project-img" src="res/images/project2.jpg" alt="Project 2">
+                    <div class="project-details">
+                        <h3>Sun Tracking Solar Panel</h3>
+                        <p>Designed and Engineered a utilitarian solution for solar users that can maximizes the power generation.</p>
+                        <a href="https://github.com/your-repo" target="_blank" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+        
+                <!-- Project 3 -->
+                <div class="project">
+                    <img class="project-img" src="res/images/project3.jpg" alt="Project 3">
+                    <div class="project-details">
+                        <h3>Portfolio Website</h3>
+                        <p>Designed and developed a responsive portfolio website using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+                        <a href="https://github.com/your-repo" target="_blank" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contactSec">
+            <h2 class="titles">Contact Me</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
     </main>
-    <hr class="hr">
     <footer id="footer" class="foot">
         <div>
             <p> @2022 Maverick. <br>All rights reserved.</p>
@@ -92,8 +158,8 @@
             <ul>
                 <li><a href="https://x.com/JayZ65871309"><img class="fab XFab" src="res/images/twitter.png" alt="X"></a></li>
                 <li><a href="https://www.instagram.com/jay_2304_"><img class="fab igFab" src="res/images/instagram.png" alt="Instagram"></a></li>
-                <li><a href="#"><img class="fab ghFab" src="res/images/github.png" alt="GitHub"></a></li>
-                <li><a href="#"><img class="fab LIFab" src="res/images/linkedin.png" alt="LinkedIn"></a></li>
+                <li><a href="https://github.com/JAY-Ze"><img class="fab ghFab" src="res/images/github.png" alt="GitHub"></a></li>
+                <li><a href="www.linkedin.com/in/jayz23"><img class="fab LIFab" src="res/images/linkedin.png" alt="LinkedIn"></a></li>
             </ul>
         </div>
         
