@@ -1,24 +1,66 @@
-const scrollButton = document.getElementById('scrollButton');
-    const footer = document.getElementById('footer');
+const button = document.querySelector('.mobile-menu-button');
+const mobileNav = document.querySelector('.mobile-menu');
 
-    scrollButton.addEventListener('click', () => {
-        const footerPosition = footer.getBoundingClientRect().top + window.scrollY; // Get footer's position
-        const scrollInterval = 10; // Time interval in milliseconds
-        const scrollStep = 1; // Pixels to scroll in each step
-        let currentPosition = window.scrollY;
-  
-        const slowScroll = setInterval(() => {
-          if (currentPosition >= footerPosition || currentPosition + window.innerHeight >= document.body.scrollHeight) {
-            clearInterval(slowScroll); // Stop scrolling when footer is reached
-          } else {
+button.addEventListener('click', () => {
+  mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+});
+
+
+const scrollButton = document.getElementById('scrollButton');
+const footer = document.getElementById('footer');
+let scrollIntervalId = null;
+let isAutoScrolling = false;
+
+function stopAutoScroll() {
+    if (scrollIntervalId) {
+        clearInterval(scrollIntervalId);
+        scrollIntervalId = null;
+        isAutoScrolling = false;
+    }
+}
+
+scrollButton.addEventListener('click', () => {
+    // If already auto-scrolling, do nothing
+    if (isAutoScrolling) return;
+    
+    const footerPosition = footer.getBoundingClientRect().top + window.scrollY;
+    const scrollStep = 1;
+    let currentPosition = window.scrollY;
+    
+    isAutoScrolling = true;
+    
+    scrollIntervalId = setInterval(() => {
+        if (currentPosition >= footerPosition || 
+            currentPosition + window.innerHeight >= document.body.scrollHeight) {
+            stopAutoScroll();
+        } else {
             currentPosition += scrollStep;
             window.scrollBy(0, scrollStep);
-          }
-        }, scrollInterval);
-      });
+        }
+    }, 10);
+
+    // Add event listeners to detect user interruption
+    window.addEventListener('wheel', stopAutoScroll, { once: true });
+    window.addEventListener('touchmove', stopAutoScroll, { once: true });
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || 
+            e.key === 'PageUp' || e.key === 'PageDown' || 
+            e.key === 'Home' || e.key === 'End') {
+            stopAutoScroll();
+        }
+    }, { once: true });
+});
+
+// Also stop when reaching the bottom in case the footer position calculation wasn't exact
+window.addEventListener('scroll', () => {
+    if (isAutoScrolling && 
+        window.scrollY + window.innerHeight >= document.body.scrollHeight - 10) {
+        stopAutoScroll();
+    }
+});
+
 
 const dynamicText = document.querySelector(".dynamic-text");
-
 const words = ["An ENTC Engineer", "A Web Developer", "A Software Enthusiast","Java Developer"];
 let wordIndex = 0;
 let charIndex = 0;
@@ -92,4 +134,29 @@ document.addEventListener("DOMContentLoaded", typeEffect);
       animatedTitles.forEach((title) => {
           observer.observe(title); // Observe each animated title
       });
-  });d
+  });
+
+
+// this is the code for random abstract bubbles
+const container = document.querySelector('.bubbles-container');
+
+  function createBubble() {
+    const bubble = document.createElement('div');
+    bubble.classList.add('bubble');
+
+    const size = Math.random() * 100 + 20; // 20px to 120px
+    bubble.style.width = `${size}px`;
+    bubble.style.height = `${size}px`;
+
+    bubble.style.left = `${Math.random() * 100}%`;
+
+    bubble.style.animationDuration = `${Math.random() * 10 + 5}s`;
+
+    container.appendChild(bubble);
+
+    // Remove bubble after animation
+    setTimeout(() => bubble.remove(), 15000);
+  }
+
+  // Create multiple bubbles at intervals
+  setInterval(createBubble, 300);
