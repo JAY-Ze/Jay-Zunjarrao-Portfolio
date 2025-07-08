@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Oxanium&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -59,10 +60,10 @@
                     impactful projects and solving real-world problems.<br><br>Let’s create something extraordinary!</p>
                 <button id="scrollButton">Learn More</button>
             </div>
-            <div class="rightSec">
+            <div class=" img-wrapper rightSec" data-tilt="{ max: 25, speed: 400 }">
                 <picture>
-                    <source srcset="res/images/programmer2.png" type="image/webp">
-                    <img class="homeImg" src="res/images/programmer2.png" alt="Profile Pic">
+                    <source srcset="res/images/profilePhoto.png" type="image/webp">
+                    <img class="homeImg" src="res/images/profilePhoto.png" alt="Profile Pic">
                 </picture>
             </div>
         </section>
@@ -78,43 +79,43 @@
         <section class="secondSec animate">
             <h2 class="titles">Skills</h2>
             <div class="skillsContainer">
-                <div class="skill">
+                <div class="skill" data-tilt="{ max: 25, speed: 400 }">
                     <img class="skill-icon" src="res/images/html-5.png" alt="HTML Icon">
                     <div class="progress-bar">
                         <div class="progress" style="width: 90%"></div>
                     </div>
                     <span class="percentage">90%</span>
                 </div>
-                <div class="skill">
+                <div class="skill"  data-tilt="{ max: 25, speed: 400 }">
                     <img class="skill-icon" src="res/images/css3.png" alt="CSS Icon">
                     <div class="progress-bar">
                         <div class="progress" style="width: 75%"></div>
                     </div>
                     <span class="percentage">75%</span>
                 </div>
-                <div class="skill">
+                <div class="skill"  data-tilt="{ max: 25, speed: 400 }">
                     <img class="skill-icon" src="res/images/javascript.png" alt="JavaScript Icon">
                     <div class="progress-bar">
                         <div class="progress" style="width: 90%"></div>
                     </div>
                     <span class="percentage">90%</span>
                 </div>
-                <div class="skill">
-                    <img class="skill-icon" src="res/images/javascript.png" alt="React Icon">
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 50%"></div>
-                    </div>
-                    <span class="percentage">50%</span>
-                </div>
-                <div class="skill">
+                <div class="skill"  data-tilt="{ max: 25, speed: 400 }">
                     <img class="skill-icon" src="res/images/java.png" alt="Java Icon">
                     <div class="progress-bar">
                         <div class="progress" style="width: 40%"></div>
                     </div>
                     <span class="percentage">40%</span>
                 </div>
-                <div class="skill">
+                <div class="skill"  data-tilt="{ max: 25, speed: 400 }">
                     <img class="skill-icon" src="res/images/python.png" alt="Python Icon">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                    <span class="percentage">80%</span>
+                </div>
+                <div class="skill"  data-tilt="{ max: 25, speed: 400 }">
+                    <img class="skill-icon" src="res/images/reactjs.svg" alt="React.js Icon">
                     <div class="progress-bar">
                         <div class="progress" style="width: 90%"></div>
                     </div>
@@ -122,8 +123,7 @@
                 </div>
             </div>
         </section>
-        <section class="projectSec animate">
-            <div class="section-title-animation">Projects</div>
+        <section class="thirdSec projectSec animate">
             <h2 class="titles">Projects</h2>
             <div class="projectContainer">
                 <!--Project 1-->
@@ -199,8 +199,7 @@
                             alt="Instagram"></a></li>
                 <li><a href="https://github.com/JAY-Ze"><img class="fab ghFab" src="res/images/github.png"
                             alt="GitHub"></a></li>
-                <li><a href="www.linkedin.com/in/jayz23"><img class="fab LIFab" src="res/images/linkedin.png"
-                            alt="LinkedIn"></a></li>
+                <li><a href="www.linkedin.com/in/jayzunjarrao"><img class="fab LIFab" src="res/images/linkedin.png" alt="LinkedIn"></a></li>
             </ul>
         </div>
 
@@ -208,5 +207,6 @@
 </div>
 </body>
 <script src="script.js"></script>
-
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 </html>
