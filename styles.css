@@ -1,7 +1,6 @@
 
 body{
     background-color: #233040;
-    margin: 1rem 1.5rem 0rem 1.5rem;
     color: #E8E8E8;
     font-family: "Geologica", sans-serif;
     font-optical-sizing: auto;
@@ -10,7 +9,6 @@ body{
     background: #000000;
     position: relative;
 }
-
 .bubbles-container {
   position: fixed;
   top: 0;
@@ -121,11 +119,12 @@ section{
     padding: 20px 1rem;
     border-radius: 15px;
     margin: 20px 5%;
-    position: relative; /* For absolute positioning of animated titles */
+    position: relative;
 }
 .firstSec{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .greets{
     font-size: 1.5rem;
@@ -149,6 +148,7 @@ section{
     overflow: hidden; /* Hide overflow */
     display: inline-block; /* Inline block for cursor effect */
     animation: blink 1s infinite;
+    min-height: 1.25em;
 }
   
 /* Cursor blinking effect */
@@ -183,13 +183,28 @@ section{
     text-align: center;
 }
 .homeImg{
-    width: 400px;
+    width: 15rem;
     transition: transform 1s ease;
-    filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+    animation: glow 3s ease-in-out infinite;
+    filter:drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 .homeImg:hover {
     transform: scale(1.1);
     transform-style:preserve-3d;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0.75rem rgb(255, 217, 0), 0 0 0.75rem rgb(255, 255, 0);
+  }
+  50% {
+    box-shadow: 0 0 10px rgb(255, 217, 0), 0 0 30px rgb(255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0.75rem rgb(255, 217, 0), 0 0 0.75rem rgb(255, 255, 0);
+  }
 }
 button {
     padding: 5px 10px;
@@ -230,7 +245,7 @@ button {
 
 /* Skills Section Styling */
 .secondSec {
-    padding: 20px 5%;
+    padding: 20px 2%;
     background-color: #001d33;
     border-radius: 15px;
     text-align: center;
@@ -242,7 +257,7 @@ button {
 }
 .skillsContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
     gap: 20px;
     padding: 10px;
     justify-content: center;
@@ -333,7 +348,6 @@ button {
     padding: 20px 10px; /* Reduced padding */
     background-color: #001d33;
     border-radius: 15px;
-    margin: 20px 5%; /* Reduced margin */
     text-align: center;
 }
 
@@ -409,7 +423,6 @@ button {
     padding: 20px 5%;
     background-color: #001d33;
     border-radius: 15px;
-    margin: 20px 5%;
     text-align: center;
 }
 
@@ -492,30 +505,6 @@ footer {
 }
 
 
-
-/* Animated Section Titles */
-.section-title-animation {
-    position: absolute;
-    top: 50%; /* Center vertically */
-    left: 100%; /* Start off-screen to the right */
-    transform: translateY(-50%);
-    font-size: 8rem; /* Large text size */
-    color: rgba(255, 255, 255, 0.1); /* Semi-transparent text */
-    white-space: nowrap; /* Prevent text from wrapping */
-    z-index: 1; /* Place behind the cards */
-    animation: scrollTitle 10s linear infinite; /* Animation */
-    pointer-events: none; /* Prevent interaction */
-}
-
-@keyframes scrollTitle {
-    0% {
-        left: 100%; /* Start off-screen to the right */
-    }
-    100% {
-        left: -100%; /* Move off-screen to the left */
-    }
-}
-
 /* Ensure sections have relative positioning for absolute children */
 .secondSec,
 .projectSec,
@@ -531,9 +520,9 @@ footer {
         margin: 1rem 1.5rem 0rem 1.5rem;
     }
     section{
-    padding: 20px 1rem;
+    padding: 0px 0rem;
     border-radius: 15px;
-    margin: 1rem 1rem;
+    margin: 0rem 0rem;
     position: relative; /* For absolute positioning of animated titles */
 }
     header{
@@ -591,7 +580,7 @@ footer {
         display: none; /* Hide checkbox */
     }
     .homeImg{
-        width: 25rem;
+        width: 15rem;
         height: auto;
         justify-content: center;
         transition: transform 1s ease;
@@ -639,4 +628,5 @@ footer {
         overflow: hidden;
         margin: 15px;
     }
+    
 }
