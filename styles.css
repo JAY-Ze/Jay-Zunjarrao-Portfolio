@@ -754,6 +754,7 @@ footer {
     }
 
     .skill {
+        height: 4rem;
         background-color: #010f1a;
         border: 1px solid #007BFF;
         display: flex;
@@ -801,5 +802,9 @@ footer {
         border-radius: 15px;
         text-align: center;
     }
+    .excepSkillicon {
+        width: 3rem;
+        height: auto;
 
+    }
 }
