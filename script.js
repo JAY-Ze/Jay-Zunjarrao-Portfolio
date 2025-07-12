@@ -24,7 +24,7 @@ scrollButton.addEventListener('click', () => {
     if (isAutoScrolling) return;
     
     const footerPosition = footer.getBoundingClientRect().top + window.scrollY;
-    const scrollStep = 1;
+    const scrollStep = 3;
     let currentPosition = window.scrollY;
     
     isAutoScrolling = true;
