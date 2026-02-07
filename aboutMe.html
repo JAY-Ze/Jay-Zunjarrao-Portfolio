@@ -1,143 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jay Zunjarrao</title>
-    <link rel="icon" type="favicon.png" href="favicon.png" />
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Learn more about Jay Zunjarrao - Engineering graduate passionate about software development, AI, and innovative tech solutions.">
+    <meta name="keywords" content="Jay Zunjarrao, About, Software Developer, AI Engineer, Biography">
+    <meta name="author" content="Jay Zunjarrao">
+    <meta name="robots" content="index, follow">
+    
+    <title>About Jay Zunjarrao - Software Developer & AI Enthusiast</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/gif" href="res/aniLogo.gif">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Oxanium&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-hero {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 20px 60px;
+        }
+        
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .about-section {
+            padding: 80px 0;
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .about-card {
+            padding: 35px;
+            border-radius: 20px;
+            transition: var(--transition);
+        }
+        
+        .about-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .about-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, var(--primary-light), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .about-card p,
+        .about-card ul {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        
+        .about-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .about-card ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .about-card ul li:last-child {
+            border-bottom: none;
+        }
+        
+        .about-card ul li i {
+            color: var(--primary-light);
+            margin-right: 10px;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, var(--primary), var(--secondary));
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-bottom: 40px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -45px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: var(--primary-light);
+            border-radius: 50%;
+            box-shadow: 0 0 20px var(--primary);
+        }
+        
+        .timeline-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        
+        .timeline-item span {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            opacity: 0.7;
+        }
+        
+        .timeline-item p {
+            margin-top: 10px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            
+            .about-hero {
+                min-height: 50vh;
+                padding-top: 100px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-    <div class="bubbles-container"></div>
-    <div class="main-content">
-        <header>
-            <nav>
-                <div class="left">
-                    <img class="aniLogo" src="res/aniLogo.gif" alt="animated Logo">
-                    <div class="PageHead"></div>
-                </div>
-                <div class="right desktop-menu">
-                    <a class="navBar" href="index.html">Home</a>
-                    <a class="navBar" href="#skillSec">Skills</a>
-                    <a class="navBar" href="#prjtSec">Projects</a>
-                    <a class="navBar" href="#contactSec">Contact</a>
-                    <a class="navBar" href="aboutMe.html">About Me</a>
-                </div>
-
-                <input type="checkbox" id="menu-toggle" class="hidden">
-                <label for="menu-toggle" class="mobile-menu-button">☰</label>
-                <div class="mobile-menu">
-                    <a href="index.html">Home</a>
-                    <a href="#skillSec">Skills</a>
-                    <a href="#prjtSec">Projects</a>
-                    <a href="#contactSec">Contact</a>
-                    <a href="aboutMe.html">About Me</a>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <section>
-            <h1>About Me</h1>
-            </section>
-            <section>
-                <div class="aboutMe">
-                        
-                        <!--
-                        My goal is to continuously learn and grow as a developer, contributing to projects that make a positive impact. I believe in the power of collaboration and am always eager to connect with fellow developers and tech enthusiasts.
-                        This portfolio is a reflection of my skills, projects, and experiences. It showcases my work in web development, including various projects that demonstrate my ability to create responsive and interactive web applications. Each project is a testament to my dedication to quality and my passion for coding.
-
-
-                        Feel free to connect with me on social media or reach out via email if you have any questions or just want to chat about web development!
-                        My portfolio showcases a variety of projects that highlight my skills and creativity. Each project reflects my dedication to delivering high-quality work and my ability to solve complex problems through code.
-                    <p>
-                        Thank you for visiting my portfolio, and I hope you find it informative!
-                    </p> -->
-                        Hi! I’m Jay, an Engineering graduate and a passionate Software Development Engineer , blending
-                        creative thinking with technical skills to build software solutions that make a difference.
-                        Whether it's crafting intelligent IoT systems or designing responsive web apps, I love solving
-                        problems with code.
-                        <p>My journey in software development began with a fascination for technology and a desire to
-                            build innovative applications that solve real-world problems.</p>
-                        <p>💡 Over the years, I’ve worked on diverse projects such as:
-                        <ul>
-                            <li>A Solar-Powered Grass Cutter using ESP32 and automation</li>
-                            <li>A Facial Recognition System for visually impaired users with Raspberry Pi</li>
-                            <li>A responsive Car Catalogue Website to explore global car brands</li>
-                            <li>A flashcard app to learn Japanese Kana Characters</li>
-                        </ul>
-                        </p>
-                        I’ve also freelanced as a graphic designer, completed virtual internships in Robotics and AI/ML,
-                        and organized coding events like Codewars, designing technical quizzes for college peers.
-                        <p>🚀 I’m currently focused on:
-                        <ul>
-                            <li>Developing backend APIs with Node.js & Express</li>
-                            <li>Advancing my skills in Java and DSA</li>
-                            <li>Exploring full-stack development and AI-driven applications</li>
-                            <li>Learning Flutter and Dart development</li>
-                        </ul>
-                        </p>
-                </div>
-            </section>
-            <section>
-                When I’m not coding or designing, I enjoy diving into the world of technology, creativity, and
-                lifelong learning.
-                <div>
-                    <p>📝 I write blogs about emerging tech trends, gadgets, and sometimes even about lifestyle topics
-                        that inspire me — combining logic with introspection. Sharing thoughts through words helps me
-                        sharpen my thinking and connect with like-minded people.</p>
-                    <p>📚 I’m also a book lover, always on the lookout for insightful reads that expand my worldview.
-                        Lately, I’ve been learning a new language as a side hobby — not just to communicate, but to
-                        better understand different cultures and ways of thinking.</p>
-                    <p>🎨 My creative side shows up in my interest in color theory, typography, and visual design. I
-                        often explore how to create clean, intuitive UI by studying design systems and modern web
-                        aesthetics.</p>
-                    <p>🎬 I’m also passionate about video editing and storytelling — editing content using DaVinci
-                        Resolve and creating 3D animations in Blender. It’s fascinating how animation and editing can
-                        turn raw ideas into engaging visual experiences.</p>
-                    <p>🧠 I have a deep interest in cutting-edge technology, especially in areas like semiconductors,
-                        chip design, graphics, and computing innovations. I love understanding how modern tech is built
-                        and how it’s constantly pushing boundaries.</p>
-                </div>
-                All these interests not only keep me curious and inspired, but also enrich the way I build software —
-                with more context, creativity, and clarity.
-            </section>
-            <section>
-                 Feel free to connect with me on social media or reach out via email.
-                 Thank you for visiting my portfolio!
-            </section>
-
-        </main>
-        <footer id="footer" class="foot ">
-            <div class="footerText">
-                <p> @2025 Maverick. <br>All rights reserved.</p>
-            </div>
-            <div class="socialMedia">
-                <ul>
-                    <li><a href="https://x.com/JayZ65871309"><img class="fab XFab" src="res/images/twitter.png"
-                                alt="X"></a>
-                    </li>
-                    <li><a href="https://www.instagram.com/jay_2304_"><img class="fab igFab"
-                                src="res/images/instagram.png" alt="Instagram"></a></li>
-                    <li><a href="https://github.com/JAY-Ze"><img class="fab ghFab" src="res/images/github.png"
-                                alt="GitHub"></a></li>
-                    <li><a href="https://www.linkedin.com/in/jayzunjarrao"><img class="fab LIFab" src="res/images/linkedin.png"
-                                alt="LinkedIn"></a></li>
-                </ul>
-            </div>
-
-        </footer>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
     </div>
-</body>
-<script src="script.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 
+    <!-- Navigation -->
+    <nav class="navbar glass-effect" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="res/aniLogo.gif" alt="Jay Zunjarrao Logo" class="logo-img">
+                <span>Jay Zunjarrao</span>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#skillSec" class="nav-link">Skills</a>
+                <a href="index.html#prjtSec" class="nav-link">Projects</a>
+                <a href="index.html#contactSec" class="nav-link">Contact</a>
+                <a href="aboutMe.html" class="nav-link active">About</a>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="about-content">
+            <div class="hero-badge glass-effect" data-aos="fade-down">
+                <i class="fas fa-user"></i>
+                About Me
+            </div>
+            
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                Transforming Ideas Into
+                <span class="gradient-text">Digital Reality</span>
+            </h1>
+            
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                I'm a passionate engineer who believes in the power of technology to solve real-world problems. 
+                My journey in tech has been driven by curiosity, creativity, and a relentless pursuit of innovation.
+            </p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-card glass-effect" data-aos="fade-up">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>Bachelor of Engineering (Electronics and Telecommunication)</h4>
+                            <span>2021 - 2025</span>
+                            <p>Focused on Engineering impactful, user-centric and real-world projects.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>HSC (Computer Science)</h4>
+                            <span>2019 - 2021</span>
+                            <p>Focused on Computer Science and logic building.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-card glass-effect" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-lightbulb"></i> Interests</h3>
+                    <ul>
+                        <li><i class="fas fa-code"></i> Software Development</li>
+                        <li><i class="fas fa-brain"></i> Artificial Intelligence</li>
+                        <li><i class="fas fa-palette"></i> UI/UX Design</li>
+                        <!-- <li><i class="fas fa-robot"></i> Robotics & Automation</li> -->
+                        <li><i class="fas fa-microchip"></i> Internet of Things</li>
+                    </ul>
+                </div>
+                
+                <div class="about-card glass-effect" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-rocket"></i> My Approach</h3>
+                    <p>
+                        I believe in building solutions that are not just technically sound but also user-centric and impactful. 
+                        Every project is an opportunity to learn, innovate, and push the boundaries of what's possible.
+                    </p>
+                    <p style="margin-top: 15px;">
+                        From conceptualization to deployment, I focus on creating experiences that make a difference 
+                        in people's lives while maintaining clean, efficient, and scalable code.
+                    </p>
+                </div>
+                
+                <div class="about-card glass-effect" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="fas fa-trophy"></i> Achievements</h3>
+                    <ul>
+                        <li><i class="fas fa-award"></i> Developed VisionAssist for visually impaired</li>
+                        <li><i class="fas fa-award"></i> Built Sun Tracking Solar Panel system</li>
+                        <li><i class="fas fa-award"></i> Created multiple full-stack web applications</li>
+                        <li><i class="fas fa-award"></i> Awarded Best Paper Presentation Award for VisionAssist</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="hero-cta" style="margin-top: 60px; justify-content: center;" data-aos="fade-up" data-aos-delay="400">
+                <a href="index.html#contactSec" class="btn btn-primary">
+                    <span>Let's Collaborate</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="res/Jay_Zunjarrao_CV.pdf" class="btn btn-secondary" download>
+                    <i class="fas fa-download"></i>
+                    <span>Download Resume</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Jay Zunjarrao. All rights reserved.</p>
+                <p class="footer-tagline">Crafted with passion & innovation</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>

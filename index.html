@@ -1,274 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jay Zunjarrao</title>
-    <link rel="icon" type="favicon.png" href="favicon.png" />
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Jay Zunjarrao - Engineering graduate passionate about software development, AI, and innovative tech solutions. Explore my portfolio of IoT, machine learning, and creative design projects.">
+    <meta name="keywords" content="Jay Zunjarrao, Software Developer, AI, Machine Learning, IoT, Web Development, Portfolio, React, Python, JavaScript">
+    <meta name="author" content="Jay Zunjarrao">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Jay Zunjarrao - Software Developer & AI Enthusiast">
+    <meta property="og:description" content="Engineering graduate passionate about software development, AI, and innovative tech solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jayzunjarrao.in">
+    <meta property="og:image" content="https://jayzunjarrao.in/res/images/profilePhoto.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jay Zunjarrao - Software Developer & AI Enthusiast">
+    <meta name="twitter:description" content="Engineering graduate passionate about software development, AI, and innovative tech solutions.">
+    <meta name="twitter:image" content="https://jayzunjarrao.in/res/images/profilePhoto.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jayzunjarrao.in">
+    
+    <title>Jay Zunjarrao - Software Developer & AI Enthusiast | Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/gif" href="res/aniLogo.gif">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Oxanium&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="bubbles-container"></div>
-    <div class="main-content">
-        <header>
-            <nav>
-                <div class="left">
-                    <img class="aniLogo" src="res/aniLogo.gif" alt="animated Logo">
-                    <div class="PageHead"></div>
-                </div>
-                <div class="right desktop-menu">
-                    <a class="navBar" href="index.html">Home</a>
-                    <a class="navBar" href="#skillSec">Skills</a>
-                    <a class="navBar" href="#prjtSec">Projects</a>
-                    <a class="navBar" href="#contactSec">Contact</a>
-                    <a class="navBar" href="aboutMe.html">About Me</a>
-                </div>
-
-                <input type="checkbox" id="menu-toggle" class="hidden">
-                <label for="menu-toggle" class="mobile-menu-button">☰</label>
-                <div class="mobile-menu">
-                    <a href="index.html">Home</a>
-                    <a href="#skillSec">Skills</a>
-                    <a href="#prjtSec">Projects</a>
-                    <a href="#contactSec">Contact</a>
-                    <a href="aboutMe.html">About Me</a>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <section class="firstSec">
-                <div class="leftSec">
-                    <h1 class="greets">Hey, I am</h1>
-                    <h1 class="name">Jay Zunjarrao</h1>
-                    <div class="typing-container">
-                        <span class="dynamic-text"></span>
-                    </div>
-                    <p>I am an Engineering graduate passionate about software development, AI, and innovative tech
-                        solutions. With hands-on experience in IoT, machine learning, and creative design, I thrive on building
-                        impactful projects and solving real-world problems.<br><br>Let’s create something extraordinary!
-                    </p>
-                    <button id="scrollButton">Learn More</button>
-                </div>
-                <div class=" img-wrapper rightSec" data-tilt="{ max: 25, speed: 400 }">
-                    <picture>
-                        <source srcset="res/images/profilePhoto.png" type="image/webp">
-                        <img class="homeImg" src="res/images/profilePhoto.png" alt="Profile Pic">
-                    </picture>
-                </div>
-            </section>
-            <section class="QuoteSec animate">
-                <div class="quote">
-                    <p>&ldquo;The Web as I envisioned it, we have not seen it yet. The future is still so much bigger than the past.&rdquo;</p>
-                </div>
-                <div class="author">
-                    <p>- Tim Berners-Lee</p>
-                </div>
-            </section>
-            <section id="skillSec" class="secondSec animate">
-                <h2 class="titles">Skills</h2>
-                <div class="skillsContainer">
-                    <div class="skill" data-tilt="{ max: 25, speed: 400 }">
-                        <span class="tooltip">HTML</span>
-                        <img class="skill-icon" src="res/images/html-5.png" alt="HTML">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 90%"></div>
-                        </div>
-                        <span class="percentage">90%</span>
-                    </div>
-                    <div class="skill" data-tilt="{ max: 25, speed: 400 }">
-                        <span class="tooltip">CSS</span>
-                        <img class="skill-icon" src="res/images/css3.png" alt="CSS">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 75%"></div>
-                        </div>
-                        <span class="percentage">75%</span>
-                    </div>
-                    <div class="skill" data-tilt="{ max: 25, speed: 400 }">
-                        <span class="tooltip">JavaScript</span>
-                        <img class="skill-icon" src="res/images/javascript.png" alt="JavaScript">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 90%"></div>
-                        </div>
-                        <span class="percentage">90%</span>
-                    </div>
-                    <div class="skill" data-tilt="{ max: 25, speed: 400 }">
-                        <span class="tooltip">Java</span>
-                        <img class="skill-icon" src="res/images/java.png" alt="Java">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 50%"></div>
-                        </div>
-                        <span class="percentage">50%</span>
-                    </div>
-                    <div class="skill" data-tilt="{ max: 25, speed: 400 }">
-                        <span class="tooltip">Python</span>
-                        <img class="skill-icon" src="res/images/python.png" alt="Python">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 90%"></div>
-                        </div>
-                        <span class="percentage">80%</span>
-                    </div>
-                    <div class="skill" data-tilt="{ max: 25, speed: 400 }">
-                        <span class="tooltip">React.js</span>
-                        <img class="skill-icon" src="res/images/reactjs.svg" alt="React.js">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 90%"></div>
-                        </div>
-                        <span class="percentage">80%</span>
-                    </div>
-                    <div class="skill" data-tilt="{ max: 25, speed: 400 }">
-                        <span class="tooltip">Bootstrap</span>
-                        <img class="skill-icon" src="res/images/bootstrap.png" alt="Bootstrap">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 90%"></div>
-                        </div>
-                        <span class="percentage">80%</span>
-                    </div>
-                    <div class="skill" data-tilt="{ max: 25, speed: 400 }">
-                        <span class="tooltip">SQL</span>
-                        <img class="skill-icon" src="res/images/sql.png" alt="SQL" style="width: 80px;">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 70%"></div>
-                        </div>
-                        <span class="percentage">70%</span>
-                    </div>
-                    <div class="skill" data-tilt="{ max: 25, speed: 400 }">
-                        <span class="tooltip">node.js</span>
-                        <img class="skill-icon" src="res/images/nodejs.png" alt="React.js">
-                        <div class="progress-bar">
-                            <div class="progress" style="width:25%"></div>
-                        </div>
-                        <span class="percentage">25%</span>
-                    </div>
-                    <div class="skill" data-tilt="{ max: 25, speed: 400 }">
-                        <span class="tooltip">MongoDB</span>
-                        <img class="skill-icon" src="res/images/mongoDB.png" alt="MongoDB">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 40%"></div>
-                        </div>
-                        <span class="percentage">40%</span>
-                    </div>
-                </div>
-            </section>
-            <!-- <section id="toolsSec" class="ToolsSec">
-                <h2 class="titles">Engineering with</h2>
-                <div class="toolsContainer">
-                    <div class="tool" data-tilt="{ max: 25, speed: 400 }">
-                        <span class="tooltip">Arduino</span>
-                        <img class="tool-icon" src="res/images/arduino.png" alt="Arduino">
-                    </div>
-                    <div class="tool" data-tilt="{ max: 25, speed: 400 }">
-                        <span class="tooltip">Arduino</span>
-                        <img class="tool-icon" src="res/images/arduino.png" alt="Arduino">
-                    </div>
-                </div>
-            </section> -->
-            <section id="prjtSec" class=" projectSec">
-                <h2 class="titles">Projects</h2>
-                <div class="projectContainer">
-                    <!--Project 1-->
-                    <div class="project">
-                        <div class="project-details">
-                            <h3>theMavericks</h3>
-                            <p>Building a website for Car Enthusiasths where they can browse their favorite cars.</p>
-                        </div>
-                        <div>
-                            <a href="https://github.com/JAY-Ze/theMavericks" target="_blank" class="project-link">View
-                                on
-                                GitHub</a>
-                        </div>
-                    </div>
-
-                    <!--Project 2-->
-                    <div class="project">
-                        <div class="project-details">
-                            <h3>VisionAssist: Face Recognition System for Visually Impaired</h3>
-                            <p>Designed and Engineered a efficient and reliable using OpenCV, Haar Cascade alogrithm
-                                andpyttsx3 TTS.</p>
-
-                        </div>
-                        <div>
-                            <a href="https://github.com/JAY-Ze/VisionAssist" target="_blank" class="project-link">View
-                                on
-                                GitHub</a>
-                        </div>
-                    </div>
-
-                    <!--Project 3-->
-                    <div class="project">
-                        <div class="project-details">
-                            <h3>Sun Tracking Solar Panel</h3>
-                            <p>Designed and Engineered a utilitarian solution for solar users that can maximizes the
-                                power
-                                generation.</p>
-                        </div>
-                        <div>
-                            <a href="https://github.com/your-repo" target="_blank" class="project-link">View on
-                                GitHub</a>
-                        </div>
-
-                    </div>
-
-                    <!-- Project 4 -->
-                    <div class="project">
-                        <div class="project-details">
-                            <h3>Portfolio Website</h3>
-                            <p>Designed and developed a responsive portfolio website using HTML, CSS, and JavaScript to
-                                showcase my skills and projects.</p>
-                        </div>
-                        <div>
-                            <a href="https://github.com/JAY-Ze/Jay-Zunjarrao-Portfolio" target="_blank"
-                                class="project-link">View on
-                                GitHub</a>
-                        </div>
-                    </div>
-                    <!-- Project 5 -->
-                    <div class="project">
-                        <div class="project-details">
-                            <h3>Japanese Kana Flashcard App</h3>
-                            <p>Developed a flashcard app using Flutter Framework and Dart. </p>
-                        </div>
-                        <div>
-                            <a href="https://github.com/JAY-Ze/Japanese-Lang-Flashcard" target="_blank"
-                                class="project-link">View on
-                                GitHub</a>
-                        </div>
-                    </div>
-            </section>
-            <section id="contactSec" class="contactSec animate">
-                <h2 class="titles">Contact Me</h2>
-                <form action="https://formspree.io/f/xnnzdobj" method="POST">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send</button>
-                </form>
-            </section>
-        </main>
-        <footer id="footer" class="foot ">
-            <div>
-                <p> @2026 Maverick. <br>All rights reserved.</p>
-            </div>
-            <div class="socialMedia">
-                <a href="https://x.com/JayZ65871309"><img class="fab XFab" src="res/images/twitter.png" alt="X"></a>
-                <a href="https://www.instagram.com/jay_2304_"><img class="fab igFab" src="res/images/instagram.png"
-                        alt="Instagram"></a>
-                <a href="https://github.com/JAY-Ze"><img class="fab ghFab" src="res/images/github.png" alt="GitHub"></a>
-                <a href="www.linkedin.com/in/jayzunjarrao"><img class="fab LIFab" src="res/images/linkedin.png"
-                        alt="LinkedIn"></a>
-            </div>
-
-        </footer>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
     </div>
-</body>
-<script src="script.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 
+    <!-- Navigation -->
+    <nav class="navbar glass-effect" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="res/aniLogo.gif" alt="Jay Zunjarrao Logo" class="logo-img">
+                <span>Jay Zunjarrao</span>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#skillSec" class="nav-link">Skills</a>
+                <a href="#prjtSec" class="nav-link">Projects</a>
+                <a href="#contactSec" class="nav-link">Contact</a>
+                <a href="aboutMe.html" class="nav-link">About</a>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge glass-effect" data-aos="fade-down">
+                    <span class="status-dot"></span>
+                    Available for opportunities
+                </div>
+                
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                    Hey, I am<br>
+                    <span class="gradient-text">Jay Zunjarrao</span>
+                </h1>
+                
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                    I am an Engineering graduate passionate about software development, AI, and innovative tech solutions. 
+                    With hands-on experience in software developement, machine learning, IoT and creative design, I thrive on building impactful projects and solving real-world problems.
+                </p>
+                
+                <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#prjtSec" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="res/Jay_Zunjarrao_CV.pdf" class="btn btn-secondary" download>
+                        <i class="fas fa-download"></i>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+                
+                <div class="hero-quote glass-effect" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-quote-left"></i>
+                    <p>The Web as I envisioned it, we have not seen it yet. The future is still so much bigger than the past.</p>
+                    <span class="quote-author">- Tim Berners-Lee</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="500">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skillSec" class="skills-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card glass-effect" data-aos="fade-up" data-aos-delay="0">
+                    <div class="skill-icon">
+                        <img src="res/images/html-5.png" alt="HTML5">
+                    </div>
+                    <div class="skill-info">
+                        <h3>HTML</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 90%"></div>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card glass-effect" data-aos="fade-up" data-aos-delay="50">
+                    <div class="skill-icon">
+                        <img src="res/images/css3.png" alt="CSS3">
+                    </div>
+                    <div class="skill-info">
+                        <h3>CSS</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 75%"></div>
+                        </div>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card glass-effect" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <img src="res/images/javascript.png" alt="JavaScript">
+                    </div>
+                    <div class="skill-info">
+                        <h3>JavaScript</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 90%"></div>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card glass-effect" data-aos="fade-up" data-aos-delay="150">
+                    <div class="skill-icon">
+                        <img src="res/images/java.png" alt="Java">
+                    </div>
+                    <div class="skill-info">
+                        <h3>Java</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 50%"></div>
+                        </div>
+                        <span class="skill-percent">50%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card glass-effect" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon">
+                        <img src="res/images/python.png" alt="Python">
+                    </div>
+                    <div class="skill-info">
+                        <h3>Python</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 80%"></div>
+                        </div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card glass-effect" data-aos="fade-up" data-aos-delay="250">
+                    <div class="skill-icon">
+                        <img src="res/images/reactjs.svg" alt="React.js">
+                    </div>
+                    <div class="skill-info">
+                        <h3>React.js</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 80%"></div>
+                        </div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card glass-effect" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <img src="res/images/bootstrap.png" alt="Bootstrap">
+                    </div>
+                    <div class="skill-info">
+                        <h3>Bootstrap</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 80%"></div>
+                        </div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card glass-effect" data-aos="fade-up" data-aos-delay="350">
+                    <div class="skill-icon">
+                        <img src="res/images/sql.png" alt="SQL">
+                    </div>
+                    <div class="skill-info">
+                        <h3>SQL</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 70%"></div>
+                        </div>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card glass-effect" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon">
+                        <img src="res/images/nodejs.png" alt="Node.js">
+                    </div>
+                    <div class="skill-info">
+                        <h3>Node.js</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 25%"></div>
+                        </div>
+                        <span class="skill-percent">25%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card glass-effect" data-aos="fade-up" data-aos-delay="450">
+                    <div class="skill-icon">
+                        <img src="res/images/mongoDB.png" alt="MongoDB">
+                    </div>
+                    <div class="skill-info">
+                        <h3>MongoDB</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 40%"></div>
+                        </div>
+                        <span class="skill-percent">40%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="prjtSec" class="projects-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing my recent work</p>
+            </div>
+            
+            <div class="projects-grid">
+                <article class="project-card glass-effect" data-aos="fade-up" data-aos-delay="0">
+                    <div class="project-number">01</div>
+                    <div class="project-content">
+                        <h3 class="project-title">theMavericks</h3>
+                        <p class="project-description">
+                            Building a website for Car Enthusiasts where they can browse their favorite cars.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Web Development</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                        <a href="https://github.com/JAY-Ze/theMavericks" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <span>View on GitHub</span>
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="project-card glass-effect" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-number">02</div>
+                    <div class="project-content">
+                        <h3 class="project-title">VisionAssist</h3>
+                        <p class="project-description">
+                            Face Recognition System for Visually Impaired using OpenCV, Haar Cascade algorithm and pyttsx3 TTS.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Accessibility</span>
+                        </div>
+                        <a href="https://github.com/JAY-Ze/VisionAssist" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <span>View on GitHub</span>
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="project-card glass-effect" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-number">03</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sun Tracking Solar Panel</h3>
+                        <p class="project-description">
+                            Designed and Engineered a utilitarian solution for solar users that maximizes the power generation.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">Hardware</span>
+                            <span class="tag">Renewable Energy</span>
+                        </div>
+                        <a href="https://github.com/your-repo" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <span>View on GitHub</span>
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="project-card glass-effect" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-number">04</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">
+                            Designed and developed a responsive portfolio website using HTML, CSS, and JavaScript to showcase my skills and projects.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Web Design</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <a href="https://github.com/JAY-Ze/Jay-Zunjarrao-Portfolio" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <span>View on GitHub</span>
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="project-card glass-effect" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-number">05</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Japanese Kana Flashcard App</h3>
+                        <p class="project-description">
+                            Developed a flashcard app using Flutter Framework and Dart for learning Japanese Kana characters.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Mobile App</span>
+                            <span class="tag">Education</span>
+                        </div>
+                        <a href="https://github.com/JAY-Ze/Japanese-Lang-Flashcard" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <span>View on GitHub</span>
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contactSec" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's create something extraordinary together</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <form class="contact-form glass-effect" data-aos="fade-up" data-aos-delay="100">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me more..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                
+                <div class="contact-info" data-aos="fade-up" data-aos-delay="200">
+                    <div class="social-links glass-effect">
+                        <h3>Connect With Me</h3>
+                        <div class="social-grid">
+                            <a href="https://x.com/JayZ65871309" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="https://www.instagram.com/jay_2304_" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://github.com/JAY-Ze" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jayzunjarrao" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Jay Zunjarrao. All rights reserved.</p>
+                <p class="footer-tagline">Crafted with passion & innovation</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
