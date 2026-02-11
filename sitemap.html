@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Complete sitemap of Jay Zunjarrao's portfolio website - easily navigate through all pages and sections.">
+    <meta name="keywords" content="Jay Zunjarrao, Sitemap, Portfolio Navigation">
+    <meta name="robots" content="index, follow">
+    
+    <title>Sitemap - Jay Zunjarrao Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/gif" href="res/aniLogo.gif">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        .sitemap-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .sitemap-card {
+            margin-bottom: 40px;
+        }
+        
+        .sitemap-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--primary-light), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .sitemap-card h2 i {
+            background: linear-gradient(135deg, var(--primary-light), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .sitemap-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .sitemap-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition);
+        }
+        
+        .sitemap-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .sitemap-list li:hover {
+            padding-left: 10px;
+            border-color: var(--primary-light);
+        }
+        
+        .sitemap-list a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: var(--transition);
+        }
+        
+        .sitemap-list a i {
+            color: var(--primary-light);
+            font-size: 1.2rem;
+            min-width: 25px;
+        }
+        
+        .sitemap-list a:hover {
+            color: var(--primary-light);
+        }
+        
+        .sitemap-list a:hover i {
+            transform: translateX(5px);
+        }
+        
+        .link-description {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-top: 5px;
+            margin-left: 37px;
+        }
+        
+        .back-home {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="res/aniLogo.gif" alt="Jay Zunjarrao Logo" class="logo-img">
+                <span>Jay Zunjarrao</span>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#skillSec" class="nav-link">Skills</a>
+                <a href="index.html#prjtSec" class="nav-link">Projects</a>
+                <a href="index.html#contactSec" class="nav-link">Contact</a>
+                <a href="aboutMe.html" class="nav-link">About</a>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sitemap Section -->
+    <section style="min-height: 100vh; padding: 120px 20px 60px;">
+        <div class="container sitemap-container">
+            <div class="section-header">
+                <h1 class="section-title">Site Navigation</h1>
+                <p class="section-subtitle">Explore all pages and sections of my portfolio</p>
+            </div>
+
+            <!-- Main Pages -->
+            <div class="glass-effect sitemap-card" style="padding: 40px; border-radius: 20px;">
+                <h2>
+                    <i class="fas fa-folder"></i>
+                    Main Pages
+                </h2>
+                <ul class="sitemap-list">
+                    <li>
+                        <a href="index.html">
+                            <i class="fas fa-home"></i>
+                            <span>Homepage</span>
+                        </a>
+                        <span class="link-description">My main portfolio page with skills, projects, and contact information</span>
+                    </li>
+                    <li>
+                        <a href="aboutMe.html">
+                            <i class="fas fa-user"></i>
+                            <span>About Me</span>
+                        </a>
+                        <span class="link-description">Learn more about my background, education, and interests</span>
+                    </li>
+                    <li>
+                        <a href="sitemap.html">
+                            <i class="fas fa-sitemap"></i>
+                            <span>Sitemap (Current Page)</span>
+                        </a>
+                        <span class="link-description">Navigate through all pages and sections</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Homepage Sections -->
+            <div class="glass-effect sitemap-card" style="padding: 40px; border-radius: 20px;">
+                <h2>
+                    <i class="fas fa-list"></i>
+                    Homepage Sections
+                </h2>
+                <ul class="sitemap-list">
+                    <li>
+                        <a href="index.html#home">
+                            <i class="fas fa-star"></i>
+                            <span>Hero Section</span>
+                        </a>
+                        <span class="link-description">Introduction and call-to-action</span>
+                    </li>
+                    <li>
+                        <a href="index.html#skillSec">
+                            <i class="fas fa-code"></i>
+                            <span>Skills & Expertise</span>
+                        </a>
+                        <span class="link-description">Technologies and programming languages I work with</span>
+                    </li>
+                    <li>
+                        <a href="index.html#prjtSec">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Featured Projects</span>
+                        </a>
+                        <span class="link-description">Showcase of my recent work and innovations</span>
+                    </li>
+                    <li>
+                        <a href="index.html#contactSec">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contact Me</span>
+                        </a>
+                        <span class="link-description">Get in touch for collaborations and opportunities</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Projects -->
+            <div class="glass-effect sitemap-card" style="padding: 40px; border-radius: 20px;">
+                <h2>
+                    <i class="fas fa-project-diagram"></i>
+                    Featured Projects
+                </h2>
+                <ul class="sitemap-list">
+                    <li>
+                        <a href="https://github.com/JAY-Ze/theMavericks" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>theMavericks</span>
+                        </a>
+                        <span class="link-description">Car enthusiast website platform</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/JAY-Ze/VisionAssist" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>VisionAssist</span>
+                        </a>
+                        <span class="link-description">Face recognition system for visually impaired</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/your-repo" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>Sun Tracking Solar Panel</span>
+                        </a>
+                        <span class="link-description">IoT solution for maximizing solar power generation</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/JAY-Ze/Jay-Zunjarrao-Portfolio" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>Portfolio Website</span>
+                        </a>
+                        <span class="link-description">This responsive portfolio website</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/JAY-Ze/Japanese-Lang-Flashcard" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>Japanese Kana Flashcard App</span>
+                        </a>
+                        <span class="link-description">Flutter-based language learning application</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Social Media & Resources -->
+            <div class="glass-effect sitemap-card" style="padding: 40px; border-radius: 20px;">
+                <h2>
+                    <i class="fas fa-share-alt"></i>
+                    Connect & Resources
+                </h2>
+                <ul class="sitemap-list">
+                    <li>
+                        <a href="https://github.com/JAY-Ze" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Profile</span>
+                        </a>
+                        <span class="link-description">View all my open-source projects</span>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/jayzunjarrao" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <span class="link-description">Professional network and experience</span>
+                    </li>
+                    <li>
+                        <a href="https://x.com/JayZ65871309" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter/X Profile</span>
+                        </a>
+                        <span class="link-description">Latest updates and tech discussions</span>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/jay_2304_" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <span class="link-description">Personal updates and behind-the-scenes</span>
+                    </li>
+                    <li>
+                        <a href="res/resume.pdf" download>
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Download Resume</span>
+                        </a>
+                        <span class="link-description">Get my complete CV in PDF format</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Back to Home -->
+            <div class="back-home">
+                <a href="index.html" class="btn btn-primary">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Homepage</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Jay Zunjarrao. All rights reserved.</p>
+                <p class="footer-tagline">Crafted with passion & innovation</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
