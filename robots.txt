@@ -1,0 +1,17 @@
+# robots.txt for jayzunjarrao.in
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://jayzunjarrao.in/sitemap.xml
+
+# Disallow crawling of resource directories (optional - can be removed if you want them indexed)
+# Disallow: /res/
+
+# Allow specific important pages
+Allow: /index.html
+Allow: /aboutMe.html
+
+# Crawl-delay (optional, adjust if needed)
+Crawl-delay: 0
